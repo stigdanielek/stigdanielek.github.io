@@ -1,7 +1,8 @@
 <ul>
+    {% assign url = page.url | remove: 'index.html' %}
     {% for item in site.navigation %}
 	{% assign class = nil %}
-	{% if page.url contains item.url %}
+	{% if url == item.url %}
 	    {% assign class = 'active' %}
 	{% endif %}
 	<li><a href="{{ item.url }}" class="{{ class }}">{{ item.title }}</a></li>
