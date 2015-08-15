@@ -1,0 +1,6 @@
+navigation:
+  - title: Hem
+    url: /
+  - title: Fest
+    url: /fest/
+

@@ -1,0 +1,9 @@
+<ul>
+    {% for item in site.navigation %}
+	{% assign class = nil %}
+	{% if page.url contains item.url %}
+	    {% assign class = 'active' %}
+	{% endif %}
+	<li><a href="{{ item.url }}" class="{{ class }}">{{ item.title }}</a></li>
+    {% endfor %}
+</ul>
