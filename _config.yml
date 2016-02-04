@@ -1,6 +1,13 @@
 navigation:
   - title: Hem
     url: /
-  - title: Fest
+  - title: Vigsel &amp; fest
     url: /fest/
-
+  - title: Boende &amp; transport
+    url: /boende/
+  - title: Hitta hit
+    url: /hitta/
+  - title: Önskelista
+    url: /lista/
+  - title: Bra att veta
+    url: /veta/

@@ -1,10 +1,21 @@
-<ul>
-    {% assign url = page.url | remove: 'index.html' %}
-    {% for item in site.navigation %}
-	{% assign class = nil %}
-	{% if url == item.url %}
-	    {% assign class = 'active' %}
-	{% endif %}
-	<li><a href="{{ item.url }}" class="{{ class }}">{{ item.title }}</a></li>
-    {% endfor %}
-</ul>
+<header>
+	<div class="header">
+		<a href="index.html">
+			<img class="first" src="/images/flowers.JPG">
+			<img src="/images/shoes.JPG">
+			<img src="/images/windows.JPG">
+		</a>
+	</div>
+	<a id="menu-toggle" onclick="toggleMenu();">Meny</a>
+	<ul id="navigation" class="navigation">
+	{% assign url = page.url | remove: 'index.html' %}
+	{% for item in site.navigation %}
+		{% assign class = nil %}
+		{% if url == item.url %}
+			{% assign class = 'active' %}
+		{% endif %}
+		<li><a href="{{ item.url }}" class="{{ class }}">{{ item.title }}</a></li>
+	{% endfor %}
+	</ul>
+</header>
+
