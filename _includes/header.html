@@ -1,21 +1,24 @@
 <header>
-	<div class="header">
-		<a href="index.html">
-			<img class="first" src="/images/flowers.JPG">
-			<img src="/images/shoes.JPG">
-			<img src="/images/windows.JPG">
-		</a>
-	</div>
-	<a id="menu-toggle" onclick="toggleMenu();">Meny</a>
-	<ul id="navigation" class="navigation">
-	{% assign url = page.url | remove: 'index.html' %}
-	{% for item in site.navigation %}
-		{% assign class = nil %}
-		{% if url == item.url %}
-			{% assign class = 'active' %}
-		{% endif %}
-		<li><a href="{{ item.url }}" class="{{ class }}">{{ item.title }}</a></li>
-	{% endfor %}
-	</ul>
+  <div class="header">
+    <a href="index.html">
+      <img class="first" src="/images/flowers-web.jpg">
+      <img src="/images/shoes-web.jpg">
+      <img src="/images/windows-web.jpg">
+    </a>
+  </div>
+  <a id="menu-toggle" onclick="toggleMenu();">Meny</a>
+  <ul id="navigation" class="navigation">
+  {% assign url = page.url | remove: 'index.html' %}
+  {% for item in site.navigation %}
+    {% assign class = nil %}
+    {% if url == item.url %}
+      {% assign class = 'active' %}
+    {% endif %}
+    {% for anypage in site.pages %}
+      {% if anypage.url == item.url %}
+        <li><a href="{{ anypage.url }}" class="{{ class }}">{{ anypage.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  </ul>
 </header>
-

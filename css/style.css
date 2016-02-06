@@ -30,7 +30,7 @@ h2 {
 	font-weight: normal;
 	margin: 0 0 5px 0;
 	padding: 0;
-}	
+}
 
 p {
 	font-family: Questrial, helvetica, sans-serif;
@@ -46,10 +46,13 @@ img {
 
 /* Own classes*/
 /*Header*/
+.header {
+  background-color: #000;
+}
 .header img {
-	float: left;
-	margin: 0 0 0 2%;
-	width: 32%;
+  float: left;
+  margin: 0 0 0.5% 0.5%;
+  width: 33%;
 }
 
 img.first {
@@ -60,6 +63,10 @@ img.first {
     content: "";
     clear: both;
     display: block;
+}
+
+.footer {
+  margin: 2%;
 }
 
 /*Navigation bar*/
@@ -82,6 +89,7 @@ img.first {
 
 .navigation li {
 	list-style-type: none;
+  padding: 2%;
 }
 
 /*Special images and texts*/
@@ -91,9 +99,9 @@ img.first {
 	display: inline-block;
 	margin: 30px 0 0 0;
 	padding: 15px 15px 50px 15px;
-	position: relative;		
+	position: relative;
 	box-shadow: 2px 2px 5px #BDBDBD;
-	transform-style: preserve-3d;	
+	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
 }
@@ -103,11 +111,11 @@ img.first {
 }
 
 .polaroid-right{
-	display: none;
+	/*display: none;*/
 }
 
 .paper {
-	background: #FCFCF5;	
+	background: #FCFCF5;
 }
 
 .home-text {
@@ -155,19 +163,30 @@ img.first {
 		text-align: center;
 	}
     .navigation li {
-		display: inline; 
+		display: inline;
 		padding: 0 5px 0 5px;
 	}
 	.polaroid-left {
 		left: 20%;
-		transform: rotateZ(-2deg);	
-		-webkit-transform: rotateZ(-2deg);	
+		transform: rotateZ(-2deg);
+		-webkit-transform: rotateZ(-2deg);
 	}
 	.polaroid-right {
 		left: 10%;
 		transform: rotateZ(-6deg);
 		-webkit-transform: rotateZ(-6deg);
 	}
+  .header {
+    background: none;
+  }
+  .header img {
+    border: 1px solid #000;
+  	margin: 0 0 0 2%;
+  	width: 32%;
+  }
+  img.first {
+  	margin: 0;
+  }
 }
 
 /*Desktop*/
@@ -186,6 +205,17 @@ img.first {
 	.col-12 { width: 100%; }
 	body { width: 800px; }
 	.navigation li { padding: 0 15px 0 15px; }
+  .header {
+    background: none;
+  }
+  .header img {
+    border: 1px solid #000;
+  	margin: 0 0 0 2%;
+  	width: 32%;
+  }
+  img.first {
+  	margin: 0;
+  }
 }
 
 .row:after {
