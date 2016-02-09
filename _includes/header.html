@@ -9,7 +9,7 @@
   <a id="menu-toggle" onclick="toggleMenu();">Meny</a>
   <ul id="navigation" class="navigation">
   {% assign url = page.url | remove: 'index.html' %}
-  {% for item in site.navigation %}
+  {% for item in site.data.navigation %}
     {% assign class = nil %}
     {% if url == item.url %}
       {% assign class = 'active' %}

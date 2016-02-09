@@ -28,15 +28,15 @@ h2 {
 	font-family: Questrial, helvetica, sans-serif;
 	font-size: 22px;
 	font-weight: normal;
-	margin: 0 0 5px 0;
+	margin: 25px 0 5px 0;
 	padding: 0;
 }
 
 p {
 	font-family: Questrial, helvetica, sans-serif;
 	line-height: 120%;
-	margin: 0;
-	padding: 0;
+	/*margin: 0;
+	padding: 0;*/
 }
 
 img {
@@ -51,7 +51,7 @@ img {
 }
 .header img {
   float: left;
-  margin: 0 0 0.5% 0.5%;
+  margin: 0 0 1px 0.5%;
   width: 33%;
 }
 
@@ -164,7 +164,7 @@ img.first {
 	}
     .navigation li {
 		display: inline;
-		padding: 0 5px 0 5px;
+		padding: 0 15px 0 15px;
 	}
 	.polaroid-left {
 		left: 20%;

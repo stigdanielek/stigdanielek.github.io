@@ -1,7 +1,6 @@
-navigation:
-  - url: /
-  - url: /fest/
-  - url: /boende/
-  - url: /hitta/
-  - url: /lista/
-  - url: /veta/
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "main"
