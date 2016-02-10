@@ -36,8 +36,13 @@ h2 {
 p {
 	font-family: Questrial, helvetica, sans-serif;
 	line-height: 120%;
-	/*margin: 0;
-	padding: 0;*/
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+table.schedule td {
+  padding: 3px 10px 3px 0;
+  vertical-align: top;
 }
 
 .nowrap {

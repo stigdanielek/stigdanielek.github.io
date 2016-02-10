@@ -30,25 +30,5 @@ title: Karta
     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
   {% endif %}
 
-  <div class="col-12">
-    <h2>Schema för helgen</h2>
-    <h3>Lördagen</h3>
-    <ul>
-      {% for item in site.data.schedule %}
-        {% if item.day == 'lördag' %}
-          <li>{{ item.time }} - {{ item.longText }}</li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-    <h3>Söndagen</h3>
-    <ul>
-      {% for item in site.data.schedule %}
-        {% if item.day == 'söndag' %}
-          <li>{{ item.time }} - {{ item.longText }}</li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-
   <h2 class="col-12 col-m-12">Hur tar jag mig till Öregrund?</h2>
 </div>

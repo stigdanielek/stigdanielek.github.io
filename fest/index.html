@@ -2,9 +2,6 @@
 title: Vigsel &amp; fest
 ---
 <div class="row">
-  <h1 class="col-12 col-m-12">
-    {{ page.title }}
-  </h1>
   <div class="col-8 col-m-6">
     <h2>Vigsel</h2>
     <p>
@@ -19,7 +16,7 @@ title: Vigsel &amp; fest
     <p class="maplink">
       <a href="/karta/#kyrka">Forsmarks kyrka</a>
     </p>
-    <h2>Bröllopsmiddag</h2>
+    <h2>Bröllopsfest</h2>
     <p>
       Bröllopsmiddagen kommer att äga rum på Forsmarks Wärdshus efter vigseln, cirka
         {{ site.data.schedule | where: "longText", "Middag och fest på Forsmarks Wärdshus" | map: "time" }}.
@@ -30,14 +27,11 @@ title: Vigsel &amp; fest
     </p>
     <p>
       När kvällen är slut, cirka
-        {{ site.data.schedule | where: "longText", "Buss tillbaka till Strandhotellet och Notvallen" | map: "time" }}
+        {{ site.data.schedule | where: "longText", "Buss tillbaka till Strandhotellet och Notvallen" | map: "time" }},
       kommer bussen att ta er tillbaka till Öregrund alternativt Notvallen.
     </p>
     <p class="maplink">
       <a href="/karta/#fest">Forsmarks Wärdshus</a>
     </p>
-  </div>
-  <div class="col-4 col-m-6">
-    <img src="/images/love-web.jpg" style="width:100%" >
   </div>
 </div>
