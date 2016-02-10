@@ -5,11 +5,40 @@ title: Bra att veta
   <h1 class="col-12 col-m-12">
     {{ page.title }}
   </h1>
-  <h2>
-    Barn
-  </h2>
-  <h2>
-    Tal
-  </h2>
 
+  <div class="col-12">
+    <h2>Schema för helgen</h2>
+    <h3>Lördagen</h3>
+    <ul>
+      {% for item in site.data.schedule %}
+        {% if item.day == 'lördag' %}
+          <li>{{ item.time }} - {{ item.longText }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <h3>Söndagen</h3>
+    <ul>
+      {% for item in site.data.schedule %}
+        {% if item.day == 'söndag' %}
+          <li>{{ item.time }} - {{ item.longText }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <h2>Gåvor</h2>
+    <p>Om ni vill ge en bröllopspresent välkomnar vi ett bidrag till vår bröllopsresa. För kontonummer se inbjudan. Det går även bra att kontakta brudens mor för en mer traditionell önskelista.</p>
+
+    <h2>Klädsel</h2>
+    <p>Kavaj</p>
+
+    <h2>Barn</h2>
+    <p>Detta är i första hand en fest för släkt och vuxna vänner, men ammade barn är givetvis välkomna.</p>
+
+    <h2>O.S.A.</h2>
+    <p>
+      O.s.a. senast den
+        {{ site.data.general.rsvpDate }}.
+      Meddela även om busstransport till övernattning och brunch dagen efter önskas. (FIXME)
+    </p>
+  </div>
 </div>

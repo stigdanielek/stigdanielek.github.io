@@ -1,4 +1,5 @@
 /*Basic tags*/
+
 body {
 	background: #DCFCEC;
 	color: #474747;
@@ -37,6 +38,19 @@ p {
 	line-height: 120%;
 	/*margin: 0;
 	padding: 0;*/
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.maplink, .maplink a {
+  color: #c00;
+  text-decoration: none;
+}
+
+.maplink::before {
+  content: "O";
 }
 
 img {

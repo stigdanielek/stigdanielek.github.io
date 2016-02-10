@@ -1,0 +1,38 @@
+[
+
+  {
+    "name": "notvallen",
+    "label": "N",
+    "latitude": 60.23107,
+    "longitude": 18.40467,
+    "title": "Notvallen"
+  },
+
+  {
+    "name": "strandhotellet",
+    "label": "S",
+    "latitude": 60.341045,
+    "longitude": 18.4394803,
+    "title": "Strandhotellet",
+    "url": "http://www.strandhotellet.nu/"
+  },
+
+  {
+    "name": "kyrka",
+    "label": "K",
+    "latitude": 60.3722,
+    "longitude": 18.1601,
+    "title": "Forsmarks kyrka",
+    "url": "https://sv.wikipedia.org/wiki/Forsmarks_kyrka"
+  },
+
+  {
+    "name": "fest",
+    "label": "W",
+    "latitude": 60.37122,
+    "longitude": 18.15273,
+    "title": "Forsmarks Wärdshus",
+    "url": "http://www.forsmarkswardshus.se/"
+  }
+
+]

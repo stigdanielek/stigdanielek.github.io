@@ -6,11 +6,19 @@ title: Boende &amp; brunch
     {{ page.title }}
   </h1>
   <div class="col-8 col-m-6">
-    <h2>
-      Boende
-    </h2>
+    <h2>Boende</h2>
     <p>
-      Mitt i det välbevarade vallonbruket Forsmark ligger Forsmarks Wärdshus, inrymt i det gamla mejeriet. Wärdshuset är beläget i en vacker miljö alldeles intill Bruksdammen, som tidigare utgjorde en viktig kraftkälla för brukets järnhantering. Det är med stolt tradition vi hälsar dig välkommen till vårt anrika Wärdshus.
+      Önskas övernattning rekommenderar brudparet boende på Strandhotellet i Öregrund, beläget 23 kilometer från Forsmarks bruk. Buss kommer att finnas tillgänglig både för transport till vigseln och tillbaka efter festen.
+    </p>
+    <p class="maplink">
+      <a href="/karta/#strandhotellet">Strandhotellet</a>
+    </p>
+    <p>
+      På Strandhotellet har brudparet preliminärbokat ett antal rum för er. För att boka dessa rum kontakta Strandhotellet på telefonnummer
+        {{ site.data.general.hotelPhone }}
+      så snart som möjligt, dock senast den
+        {{ site.data.general.hotelDeadline }}.
+      Uppge brudparets namn vid bokning.
     </p>
   </div>
   <div class="col-4 col-m-6">
@@ -19,11 +27,11 @@ title: Boende &amp; brunch
 </div>
 <div class="row">
   <div class="col-8 col-m-6">
-    <h2>
-      Transport
-    </h2>
+    <h2><a name="brunch">Brunch</a></h2>
     <p>
-      På Forsmarks Wärdshus använder vi färska råvaror från de bästa leverantörerna vi känner till. Maträtterna tillreds efter traditionella recept och är alltid hemlagade. Mat- och kaffebröd är alltid hembakat. Vår målsättning är att kunna servera svensk mat av högsta kvalitet.
+      Dagen efter vigseln kommer en brunch att serveras på <a href="/karta/#notvallen">Notvallen</a>, Östhammar,
+      {{ site.data.schedule | where: "longText", "Brunch på Notvallen" | map: "time" }}.
+      Om ni vill vara med på brunchen, anmäl detta samtidigt som ni besvarar inbjudan. Transport till brunchen ... (FIXME)
     </p>
   </div>
   <div class="col-4 col-m-6">

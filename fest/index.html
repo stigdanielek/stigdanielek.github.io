@@ -6,13 +6,29 @@ title: Vigsel &amp; fest
     {{ page.title }}
   </h1>
   <div class="col-8 col-m-6">
-    <h2>Vigsel</h2>
-    <p>Vigseln kommer att äga rum i <a href="https://sv.wikipedia.org/wiki/Forsmarks_kyrka">Forsmarks kyrka</a> klockan 16.00. För boende på Notvallen (släkt) eller på Strandhotellet i Öregrund (övriga) finns det möjlighet att åka till vigseln via inhyrd buss. Denna avgår från Notvallen klockan 14.45 och från Strandhotellet klockan 15.15. Meddela huruvida ni vill åka med när ni besvarar inbjudan.</p>
+    <h2><a name="vigsel">Vigsel</a></h2>
+    <p>
+      Vigseln kommer att äga rum i <a href="/karta/#kyrka">Forsmarks kyrka</a> klockan
+        {{ site.data.schedule | where: "longText", "Vigsel i Forsmarks kyrka" | map: "time" }}.
+      För boende på Notvallen (släkt) eller på Strandhotellet i Öregrund (övriga) finns det möjlighet att åka till vigseln via inhyrd buss. Denna avgår från Notvallen klockan
+        {{ site.data.schedule | where: "longText", "Bussen avgår från Notvallen" | map: "time" }}
+      och från Strandhotellet klockan
+        {{ site.data.schedule | where: "longText", "Bussen avgår från Strandhotellet" | map: "time" }}.
+      Meddela huruvida ni vill åka med när ni besvarar inbjudan.
+    </p>
 
-    <h2>Bröllopsmiddag</h2>
-    <p>Bröllopsmiddagen kommer att äga rum på Forsmarks Wärdshus efter vigseln. Önskar ni hålla tal eller annat framträdande under middagen anmäls detta i förväg till vår toastmaster, se inbjudan.</p>
-    <p>Efter middagen kommer en bar att finnas öppen där den törstige kan köpa mer att dricka.</p>
-    <p>När kvällen är slut, cirka 02.00, kommer bussen att ta er tillbaka till Öregrund alternativt Notvallen.</p>
+    <h2><a name="fest">Bröllopsmiddag</a></h2>
+    <p>
+      Bröllopsmiddagen kommer att äga rum på <a href="/karta/#fest">Forsmarks Wärdshus</a> efter vigseln. Önskar ni hålla tal eller annat framträdande under middagen anmäls detta i förväg till vår toastmaster, se inbjudan.
+    </p>
+    <p>
+      Efter middagen kommer en bar att finnas öppen där den törstige kan köpa mer att dricka.
+    </p>
+    <p>
+      När kvällen är slut, cirka
+        {{ site.data.schedule | where: "longText", "Buss tillbaka till Strandhotellet och Notvallen" | map: "time" }}
+      kommer bussen att ta er tillbaka till Öregrund alternativt Notvallen.
+    </p>
   </div>
   <div class="col-4 col-m-6">
     <img src="/images/love-web.jpg" style="width:100%" >

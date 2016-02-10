@@ -8,15 +8,15 @@
   </div>
   <a id="menu-toggle" onclick="toggleMenu();">Meny</a>
   <ul id="navigation" class="navigation">
-  {% assign url = page.url | remove: 'index.html' %}
-  {% for item in site.data.navigation %}
+  {% assign active_url = page.url | remove: 'index.html' %}
+  {% for navigation_url in site.data.navigation %}
     {% assign class = nil %}
-    {% if url == item.url %}
+    {% if active_url == navigation_url %}
       {% assign class = 'active' %}
     {% endif %}
-    {% for anypage in site.pages %}
-      {% if anypage.url == item.url %}
-        <li><a href="{{ anypage.url }}" class="{{ class }}">{{ anypage.title }}</a></li>
+    {% for any_page in site.pages %}
+      {% if any_page.url == navigation_url %}
+        <li><a href="{{ any_page.url }}" class="{{ class }}">{{ any_page.title }}</a></li>
       {% endif %}
     {% endfor %}
   {% endfor %}
