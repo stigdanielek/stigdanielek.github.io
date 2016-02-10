@@ -44,13 +44,14 @@ p {
   white-space: nowrap;
 }
 
-.maplink, .maplink a {
-  color: #c00;
+.maplink a, .maplink::before {
+  color: #a00;
   text-decoration: none;
 }
 
 .maplink::before {
-  content: "O";
+  content: "\25b8";
+  margin-right: 0.2em;
 }
 
 img {

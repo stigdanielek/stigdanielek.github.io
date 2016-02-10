@@ -11,39 +11,6 @@ title: Karta
   </div>
 
   <script>
-    var schedule_old = [
-      {% for item in site.data.schedule %}
-        {
-          day: '{{ item.day }}',
-          time: '{{ item.time }}',
-          mapText: '{{ item.mapText }}',
-          longText: '{{ item.longText }}',
-          place: '{{ item.place }}',
-          to: '{{ item.to }}',
-          via: '{{ item.via }}'
-        }{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    ];
-
-    var places_old = {
-      {% for item in site.data.places %}
-        {{ item.name }}: {
-          name: '{{ item.name }}',
-          label: '{{ item.label }}',
-          latitude: {{ item.latitude }},
-          longitude: {{ item.longitude }},
-          title: '{{ item.title }}',
-          url: '{{ item.url }}'
-        }{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    };
-
-    var placeNames_old = [
-      {% for item in site.data.places %}
-        '{{ item.name }}'{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    ];
-
     var schedule = {{ site.data.schedule | jsonify }};
 
     var placesGrouped = {{ site.data.places | group_by: "name" | jsonify }};
@@ -53,13 +20,12 @@ title: Karta
       places[placesGrouped[i].name] = placesGrouped[i].items[0];
       placeNames.push(placesGrouped[i].name);
     }
-
   </script>
 
   <script src="map.js"></script>
 
   {% if site.github %}
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhTvpHI7mPyfNx4iagOydM-Po-KghPKgo&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhTvpHI7mPyfNx4iagOydM-Po-KghPKgo&amp;callback=initMap" async defer></script>
   {% else %}
     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
   {% endif %}
