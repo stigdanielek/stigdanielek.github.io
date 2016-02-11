@@ -6,8 +6,8 @@ title: Bra att veta
 
     <h2>Schema för helgen</h2>
 
-    {% assign schedule_by_day = site.data.schedule | group_by: "day" %}
-    {% for day in schedule_by_day | group_by: "day" %}
+    {% assign schedule_by_day = site.data.schedule | group_by: "day" | sort: "day" %}
+    {% for day in schedule_by_day %}
       <h3>{{ day.name | capitalize }}en</h3>
       <table class="schedule">
       {% for item in day.items %}
@@ -19,8 +19,16 @@ title: Bra att veta
       </table>
     {% endfor %}
 
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-8 col-m-8">
+
     <h2>Gåvor</h2>
-    <p>Om ni vill ge en bröllopspresent välkomnar vi ett bidrag till vår bröllopsresa. För kontonummer se inbjudan. Det går även bra att kontakta brudens mor för en mer traditionell önskelista.</p>
+    <p>
+      Om ni vill ge en bröllopspresent välkomnar vi ett bidrag till vår bröllopsresa. För kontonummer se inbjudan. Det går även bra att kontakta brudens mor för en mer traditionell önskelista.
+    </p>
 
     <h2>Klädsel</h2>
     <p>Kavaj</p>

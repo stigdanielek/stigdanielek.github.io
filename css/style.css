@@ -20,7 +20,7 @@ h1 {
 	font-family: Questrial, helvetica, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
-	margin: 0;
+	margin: 25px 0 5px 0;
 	padding: 0;
 }
 
@@ -33,11 +33,20 @@ h2 {
 	padding: 0;
 }
 
+h3 {
+	color: #636363;
+	font-family: Questrial, helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 25px 0 5px 0;
+	padding: 0;
+}
+
 p {
 	font-family: Questrial, helvetica, sans-serif;
 	line-height: 120%;
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 13px;
 }
 
 table.schedule td {
@@ -75,7 +84,7 @@ img {
   width: 33%;
 }
 
-img.first {
+.header img:first-child {
 	margin: 0;
 }
 
@@ -164,7 +173,7 @@ img.first {
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 0 15px;
     /* Mobile*/
     width: 100%;
 }
