@@ -1,7 +1,7 @@
 [
 
   {
-    "name": "notvallen",
+    "key": "notvallen",
     "label": "N",
     "latitude": 60.23107,
     "longitude": 18.40467,
@@ -9,7 +9,7 @@
   },
 
   {
-    "name": "strandhotellet",
+    "key": "strandhotellet",
     "label": "S",
     "latitude": 60.341045,
     "longitude": 18.4394803,
@@ -18,7 +18,7 @@
   },
 
   {
-    "name": "kyrka",
+    "key": "kyrkan",
     "label": "K",
     "latitude": 60.3722,
     "longitude": 18.1601,
@@ -27,7 +27,7 @@
   },
 
   {
-    "name": "fest",
+    "key": "festlokalen",
     "label": "W",
     "latitude": 60.37122,
     "longitude": 18.15273,

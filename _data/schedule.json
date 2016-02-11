@@ -1,51 +1,57 @@
 [
 
   {
+    "key": "buss.notvallen",
     "day": "lördag",
     "time": "14.45",
     "mapText": "buss mot kyrkan",
     "longText": "Bussen avgår från Notvallen",
     "place": "notvallen",
-    "to": "kyrka",
+    "to": "kyrkan",
     "via": "strandhotellet"
   },
 
   {
+    "key": "buss.strandhotellet",
     "day": "lördag",
     "time": "15.15",
     "mapText": "buss mot kyrkan",
     "longText": "Bussen avgår från Strandhotellet",
     "place": "strandhotellet",
-    "to": "kyrka"
+    "to": "kyrkan"
   },
 
   {
+    "key": "vigsel",
     "day": "lördag",
     "time": "16.00",
     "mapText": "vigsel",
     "longText": "Vigsel i Forsmarks kyrka",
-    "place": "kyrka"
+    "place": "kyrkan"
   },
 
   {
+    "key": "middag",
     "day": "lördag",
     "time": "17.30",
     "mapText": "middag och fest",
     "longText": "Middag och fest på Forsmarks Wärdshus",
-    "place": "fest"
+    "place": "festlokalen"
   },
 
   {
+    "key": "buss.festlokalen",
     "day": "lördag",
     "time": "02.00",
     "mapText": "buss tillbaka till",
     "longText": "Buss tillbaka till Strandhotellet och Notvallen",
-    "place": "fest",
+    "place": "festlokalen",
     "to": "notvallen",
     "via": "strandhotellet"
   },
 
   {
+    "key": "brunch",
     "day": "söndag",
     "time": "12:00",
     "mapText": "brunch (söndag)",

@@ -1,21 +1,21 @@
-function getScheduleForPlace(place) {
+function getScheduleForPlace(key) {
   var allInfo = [];
-  if (places[place].url) {
-    allInfo.push('<a href="' + places[place].url + '">' + places[place].title + '</a>');
+  if (places[key].url) {
+    allInfo.push('<a href="' + places[key].url + '">' + places[key].title + '</a>');
   } else {
-    allInfo.push('<u>' + places[place].title + '</u>');
+    allInfo.push('<u>' + places[key].title + '</u>');
   }
 
   for (var i = 0, length = schedule.length; i < length; i++) {
     var ev = schedule[i];
     var info = '';
-    if (ev.place == place) {
+    if (ev.place == key) {
       info += ev.time + ' - ' + ev.mapText;
       if (ev.to) {
-        info += ' ' + getLink(ev.to);
+        info += ' ' + getLinkToPlace(ev.to);
       }
       if (ev.via) {
-        info += ' via ' + getLink(ev.via);
+        info += ' via ' + getLinkToPlace(ev.via);
       }
       allInfo.push(info);
     }
@@ -24,9 +24,9 @@ function getScheduleForPlace(place) {
   return allInfo.join('<br>');
 }
 
-function getLink(infoObjectName) {
-  return '<a onclick="places.' + infoObjectName + '.displayInfo();">(<b>' +
-    places[infoObjectName].label + '</b>)</a>';
+function getLinkToPlace(key) {
+  return '<a onclick="places.' + key + '.displayInfo();">(<b>' +
+    places[key].label + '</b>)</a>';
 }
 
 function initMap() {
@@ -44,40 +44,40 @@ function initMap() {
 
   var infoWindow = new google.maps.InfoWindow({});
 
-  var displayInfo = function (infoObject) {
+  var displayInfo = function (place) {
     infoWindow.close();
-    infoWindow.setPosition({ lat: infoObject.latitude, lng: infoObject.longitude });
-    infoWindow.setContent(getScheduleForPlace(infoObject.name));
+    infoWindow.setPosition({ lat: place.latitude, lng: place.longitude });
+    infoWindow.setContent(getScheduleForPlace(place.key));
     infoWindow.open(map);
-    if (!document.location.hash || document.location.hash != '#' + infoObject.name) {
-      document.location.hash = '#' + infoObject.name;
+    if (!document.location.hash || document.location.hash != '#' + place.key) {
+      document.location.hash = '#' + place.key;
     }
   };
 
-  var markerOnClickHandler = function (infoObject) {
+  var markerOnClickHandler = function (place) {
     return function () {
-      displayInfo(infoObject);
+      displayInfo(place);
     }
   };
 
-  var addMarker = function (infoObject) {
-    infoObject.marker = new google.maps.Marker({
-      position: { lat: infoObject.latitude, lng: infoObject.longitude },
+  var addMarker = function (place) {
+    place.marker = new google.maps.Marker({
+      position: { lat: place.latitude, lng: place.longitude },
       map: map,
-      label: infoObject.label,
-      title: infoObject.title
+      label: place.label,
+      title: place.title
     });
-    infoObject.displayInfo = markerOnClickHandler(infoObject);
-    infoObject.marker.addListener('click', infoObject.displayInfo);
+    place.displayInfo = markerOnClickHandler(place);
+    place.marker.addListener('click', place.displayInfo);
   };
 
-  for (var i = 0, length = placeNames.length; i < length; i++) {
-    addMarker(places[placeNames[i]]);
+  for (var i = 0, length = placeKeys.length; i < length; i++) {
+    addMarker(places[placeKeys[i]]);
   }
-  places['kyrka'].marker.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
+  places['kyrkan'].marker.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
 
   if (document.location.hash) {
-    var name = document.location.hash.replace('#', '');
-    places[name].displayInfo();
+    var key = document.location.hash.replace('#', '');
+    places[key].displayInfo();
   }
 }

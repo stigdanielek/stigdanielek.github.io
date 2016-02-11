@@ -17,14 +17,11 @@ title: Boende &amp; brunch
     <p class="maplink">
       <a href="/karta/#strandhotellet">Strandhotellet</a>
     </p>
-  </div>
-</div>
-<div class="row">
-  <div class="col-8 col-m-6">
+
     <h2>Brunch</h2>
     <p>
-      Dagen efter vigseln kommer en brunch att serveras på Notvallen, Östhammar,
-      {{ site.data.schedule | where: "longText", "Brunch på Notvallen" | map: "time" }}.
+      Dagen efter vigseln kommer en brunch att serveras på Notvallen, Östhammar, från
+        {{ site.data.schedule | where: "key", "brunch" | map: "time" }}.
       Om ni vill vara med på brunchen, anmäl detta samtidigt som ni besvarar inbjudan. Transport till brunchen ... (FIXME)
     </p>
     <p class="maplink">

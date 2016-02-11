@@ -13,12 +13,12 @@ title: Karta
   <script>
     var schedule = {{ site.data.schedule | jsonify }};
 
-    var placesGrouped = {{ site.data.places | group_by: "name" | jsonify }};
+    var placesGrouped = {{ site.data.places | group_by: "key" | jsonify }};
     var places = {};
-    var placeNames = [];
+    var placeKeys = [];
     for (var i = 0, length = placesGrouped.length; i < length; i++) {
       places[placesGrouped[i].name] = placesGrouped[i].items[0];
-      placeNames.push(placesGrouped[i].name);
+      placeKeys.push(placesGrouped[i].name);
     }
   </script>
 

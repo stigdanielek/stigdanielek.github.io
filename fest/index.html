@@ -6,20 +6,20 @@ title: Vigsel &amp; fest
     <h2>Vigsel</h2>
     <p>
       Vigseln kommer att äga rum i Forsmarks kyrka klockan
-        {{ site.data.schedule | where: "longText", "Vigsel i Forsmarks kyrka" | map: "time" }}.
-      För boende på Notvallen (släkt) eller på Strandhotellet i Öregrund (övriga) finns det möjlighet att åka till vigseln via inhyrd buss. Denna avgår från Notvallen klockan
-        {{ site.data.schedule | where: "longText", "Bussen avgår från Notvallen" | map: "time" }}
+        {{ site.data.schedule | where: "key", "vigsel" | map: "time" }}.
+      För boende på Notvallen (delar av släkten) eller på Strandhotellet i Öregrund (övriga) finns det möjlighet att åka till vigseln via inhyrd buss. Denna avgår från Notvallen klockan
+        {{ site.data.schedule | where: "key", "buss.notvallen" | map: "time" }}
       och från Strandhotellet klockan
-        {{ site.data.schedule | where: "longText", "Bussen avgår från Strandhotellet" | map: "time" }}.
+        {{ site.data.schedule | where: "key", "buss.strandhotellet" | map: "time" }}.
       Meddela huruvida ni vill åka med när ni besvarar inbjudan.
     </p>
     <p class="maplink">
-      <a href="/karta/#kyrka">Forsmarks kyrka</a>
+      <a href="/karta/#kyrkan">Forsmarks kyrka</a>
     </p>
-    <h2>Bröllopsfest</h2>
+    <h2>Fest</h2>
     <p>
       Bröllopsmiddagen kommer att äga rum på Forsmarks Wärdshus efter vigseln, cirka
-        {{ site.data.schedule | where: "longText", "Middag och fest på Forsmarks Wärdshus" | map: "time" }}.
+        {{ site.data.schedule | where: "key", "middag" | map: "time" }}.
       Önskar ni hålla tal eller annat framträdande under middagen anmäls detta i förväg till vår toastmaster, se inbjudan.
     </p>
     <p>
@@ -27,11 +27,11 @@ title: Vigsel &amp; fest
     </p>
     <p>
       När kvällen är slut, cirka
-        {{ site.data.schedule | where: "longText", "Buss tillbaka till Strandhotellet och Notvallen" | map: "time" }},
+        {{ site.data.schedule | where: "key", "buss.festlokalen" | map: "time" }},
       kommer bussen att ta er tillbaka till Öregrund alternativt Notvallen.
     </p>
     <p class="maplink">
-      <a href="/karta/#fest">Forsmarks Wärdshus</a>
+      <a href="/karta/#festlokalen">Forsmarks Wärdshus</a>
     </p>
   </div>
 </div>
