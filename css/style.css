@@ -147,6 +147,16 @@ img.first {
 	padding: 10px 10px 10px 10px;
 }
 
+.map-container {
+  border: 1px solid #b5b5b5;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
+}
+
+
 /*Responsive design */
 * {
     box-sizing: border-box;
@@ -207,6 +217,14 @@ img.first {
   img.first {
   	margin: 0;
   }
+  .map-container {
+    border: 1px solid #b5b5b5;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+  }
 }
 
 /*Desktop*/
@@ -235,6 +253,14 @@ img.first {
   }
   img.first {
   	margin: 0;
+  }
+  .map-container {
+    border: 1px solid #b5b5b5;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
   }
 }
 
