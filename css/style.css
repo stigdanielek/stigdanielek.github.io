@@ -95,8 +95,9 @@ img {
 
 #menu-toggle {
   display: block;
-  font-size: 1.5em;
-  padding: 0.5em;
+  font-size: 2em;
+  padding-top: 0.5em;
+  text-align: center;
   background: #dcfcec; display: inline-block; float: left; width: 15%;
 }
 
