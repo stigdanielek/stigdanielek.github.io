@@ -16,7 +16,7 @@
     {% endif %}
     {% for any_page in site.pages %}
       {% if any_page.url == navigation_url %}
-        <li><a href="{{ any_page.url }}" class="{{ class }}">{{ any_page.title }}</a></li>
+        <li class="{{ class }}"><a href="{{ any_page.url }}">{{ any_page.title }}</a></li>
       {% endif %}
     {% endfor %}
   {% endfor %}
