@@ -5,7 +5,7 @@ body {
   color: #474747;
   font-family: Questrial, helvetica, sans-serif;
   margin: auto;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
 }
 
 footer {
@@ -236,10 +236,9 @@ img {
   .navigation li.active::before {
     color: rgba(153, 212, 182, 0.73);
     content: "\2764\FE0E";
-    font-size: 82px;
-    line-height: 28px;
+    font-size: 5em;
     position: absolute;
-    top: 0;
+    top: -29px;
     left: -20px;
     right: -20px;
     bottom: 0;
