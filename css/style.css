@@ -5,6 +5,7 @@ body {
   color: #474747;
   font-family: Questrial, helvetica, sans-serif;
   margin: auto;
+  -webkit-text-size-adjust: 100%;
 }
 
 footer {
