@@ -209,7 +209,7 @@ img {
 
   .navigation li.active::before {
     color: rgba(153, 212, 182, 0.73);
-    content: "\2764";
+    content: "\2764\FE0E";
     font-size: 82px;
     line-height: 28px;
     position: absolute;
