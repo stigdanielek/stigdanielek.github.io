@@ -1,12 +1,16 @@
 <header>
   <div class="header">
-    <a href="/">
-      <img src="/images/flowers-web.jpg">
-      <img src="/images/shoes-web.jpg">
-      <img src="/images/windows-web.jpg">
-    </a>
+    <div style="display: inline-block; float: left; width: 15%;">
+      <a id="menu-toggle" onclick="toggleMenu();">&#9776;</a>
+    </div>
+    <div style="display: inline-block; float: left; width: 85%;">
+      <a href="/">
+        <img src="/images/flowers-web.jpg">
+        <img src="/images/shoes-web.jpg">
+        <img src="/images/windows-web.jpg">
+      </a>
+    </div>
   </div>
-  <a id="menu-toggle" onclick="toggleMenu();">Meny</a>
   <ul id="navigation" class="navigation">
   {% assign active_url = page.url | remove: 'index.html' %}
   {% for navigation_url in site.data.navigation %}
