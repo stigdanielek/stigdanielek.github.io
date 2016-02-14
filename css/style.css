@@ -5,7 +5,6 @@ body {
   color: #474747;
   font-family: Questrial, helvetica, sans-serif;
   margin: auto;
-  -webkit-text-size-adjust: none;
 }
 
 footer {
@@ -179,6 +178,7 @@ img {
 /*Responsive design */
 *, *:before, *:after {
   box-sizing: border-box;
+  -webkit-text-size-adjust: none;
 }
 
 [class*="col-"] {
