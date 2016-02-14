@@ -145,6 +145,11 @@ img {
 }
 
 
+h1.home-text {
+  font-family: "Tangerine";
+  font-size: 70px;
+  margin-bottom: 30px;
+}
 
 .home-text {
   text-align: center;
@@ -184,6 +189,16 @@ img {
   float: left;
   padding: 0 15px;
   width: 100%;
+}
+
+[class*="col-"] > img {
+  margin: 30px auto;
+  width: 80%;
+
+
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), inset 0 0 50px rgba(0, 0, 0, 0.03);
 }
 
 /*Tablets*/
@@ -239,8 +254,8 @@ img {
     line-height: 1em;
     position: absolute;
     top: -0.34em;
-    left: -0.5em;
-    right: -0.5em;
+    left: -0.1em;
+    right: -0.1em;
     bottom: 0;
     z-index: 1;
     -webkit-text-size-adjust: 110%;
@@ -267,6 +282,11 @@ img {
     width: 32%;
   }
 
+  [class*="col-"] > img {
+    margin: 60px auto 0;
+    width: 100%;
+  }
+
 }
 
 /* Desktop */
@@ -284,4 +304,9 @@ img {
   .col-11 { width: 91.66%; }
   .col-12 { width: 100%; }
   body { width: 800px; }
+
+  [class*="col-"] > img {
+    margin: 20px auto;
+    width: 70%;
+  }
 }
