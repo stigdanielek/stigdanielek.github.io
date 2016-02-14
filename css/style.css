@@ -244,9 +244,9 @@ img {
     right: -0.5em;
     bottom: 0;
     z-index: 1;
-    -webkit-text-size-adjust: 120%;
-    -moz-text-size-adjust: 120%;
-    -ms-text-size-adjust: 120%;
+    -webkit-text-size-adjust: 110%;
+    -moz-text-size-adjust: 110%;
+    -ms-text-size-adjust: 110%;
   }
 
   .navigation .active a {
