@@ -95,7 +95,7 @@ img {
 #menu-toggle {
   display: block;
   font-size: 2em;
-  padding-top: 0.5em;
+  padding-top: 0.4em;
   text-align: center;
   background: #dcfcec; display: inline-block; float: left; width: 15%;
 }
@@ -147,7 +147,7 @@ img {
 
 h1.home-text {
   font-family: "Tangerine";
-  font-size: 70px;
+  font-size: 60px;
   margin-bottom: 30px;
 }
 
