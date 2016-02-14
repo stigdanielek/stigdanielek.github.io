@@ -234,6 +234,7 @@ img {
   }
 
   .navigation li.active::before {
+    border: 1px solid black;
     color: rgba(153, 212, 182, 0.73);
     content: "\2764\FE0E";
     font-size: 5em;
