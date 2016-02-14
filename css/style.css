@@ -238,9 +238,9 @@ img {
     content: "\2764\FE0E";
     font-size: 5em;
     position: absolute;
-    top: -29px;
-    left: -20px;
-    right: -20px;
+    top: -0.35em;
+    left: -0.5em;
+    right: -0.5em;
     bottom: 0;
     z-index: 1;
   }
