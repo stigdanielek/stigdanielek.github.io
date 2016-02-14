@@ -6,7 +6,9 @@
   function toggleMenu() {
     var navigation = document.getElementById('navigation');
     if (navigation.style.display == 'block') {
-      navigation.style.display = 'none';
+      //navigation.style.display = 'none';
+      //navigation.style = undefined;
+      navigation.removeAttribute('style');
     } else {
       navigation.style.display = 'block';
     }
