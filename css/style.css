@@ -177,7 +177,7 @@ img {
 }
 
 /*Responsive design */
-* {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
