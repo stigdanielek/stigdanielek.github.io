@@ -247,6 +247,9 @@ img {
     right: -0.5em;
     bottom: 0;
     z-index: 1;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
   }
 
   .navigation .active a {
