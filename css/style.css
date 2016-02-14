@@ -238,6 +238,7 @@ img {
     color: rgba(153, 212, 182, 0.73);
     content: "\2764\FE0E";
     font-size: 5em;
+    line-height: 1em;
     position: absolute;
     top: -0.35em;
     left: -0.5em;
