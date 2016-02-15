@@ -36,7 +36,6 @@ h3 {
 }
 
 p {
-  font-family: Questrial, helvetica, sans-serif;
   line-height: 120%;
   margin-top: 8px;
   margin-bottom: 13px;
@@ -45,6 +44,12 @@ p {
 img {
   display: block;
   margin: auto;
+}
+
+img.photo {
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 50px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 50px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 50px rgba(0, 0, 0, 0.03);
 }
 
 .schedule td {
@@ -60,12 +65,10 @@ img {
 
 /* Own classes */
 /* Header */
-.header {
-  /*background-color: #000;*/
-}
 
 .header-images {
-  background: #000; display: inline-block; float: left; width: 85%;
+  background: #000;
+  overflow: auto;
 }
 
 .header img {
@@ -97,7 +100,7 @@ img {
   font-size: 2em;
   padding-top: 0.4em;
   text-align: center;
-  background: #dcfcec; display: inline-block; float: left; width: 15%;
+  background: #dcfcec; display: inline-block; float: left; width: 50px;
 }
 
 .navigation a {
@@ -125,7 +128,7 @@ img {
 
 .navigation li.active::before {
   color: rgba(153, 212, 182, 0.73);
-  content: "\2764\FE0E";
+  content: "\2764\fe0e";
   font-size: 25px;
   position: absolute;
   top: 1px;
@@ -136,19 +139,16 @@ img {
 }
 
 .paper {
-  background: #FCFCF7;
+  background: #fcfcf7;
   margin: 0 auto;
   position: relative;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), inset 0 0 50px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), inset 0 0 50px rgba(0, 0, 0, 0.03);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), inset 0 0 50px rgba(0, 0, 0, 0.03);
 }
 
-
-h1.home-text {
-  font-family: "Tangerine";
-  font-size: 60px;
-  margin-bottom: 30px;
+.logo {
+  width: 100%;
 }
 
 .home-text {
@@ -163,6 +163,7 @@ h1.home-text {
   width: 90%;
   height: 80%;
 }
+
 .maplink a, .maplink::before {
   color: #a00;
   text-decoration: none;
@@ -173,14 +174,13 @@ h1.home-text {
   margin-right: 0.2em;
 }
 
-
 .row:after {
   content: "";
   clear: both;
   display: block;
 }
 
-/*Responsive design */
+/* Responsive design */
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -191,15 +191,12 @@ h1.home-text {
   width: 100%;
 }
 
-[class*="col-"] > img {
+[class*="col-"] > img.photo {
   margin: 30px auto;
   width: 80%;
-
-
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), inset 0 0 50px rgba(0, 0, 0, 0.03);
 }
+
+
 
 /*Tablets*/
 @media only screen and (min-width: 600px) {
@@ -219,6 +216,7 @@ h1.home-text {
   body { width: 600px; }
 
   #menu-toggle { display: none; }
+
   .header-images {
     background: none;
     width: 100%;
@@ -282,12 +280,14 @@ h1.home-text {
     width: 32%;
   }
 
-  [class*="col-"] > img {
+  [class*="col-"] > img.photo {
     margin: 60px auto 0;
     width: 100%;
   }
 
 }
+
+
 
 /* Desktop */
 @media only screen and (min-width: 850px) {
@@ -303,9 +303,10 @@ h1.home-text {
   .col-10 { width: 83.33%; }
   .col-11 { width: 91.66%; }
   .col-12 { width: 100%; }
+
   body { width: 800px; }
 
-  [class*="col-"] > img {
+  [class*="col-"] > img.photo {
     margin: 20px auto;
     width: 70%;
   }
