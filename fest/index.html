@@ -8,9 +8,7 @@ title: Vigsel &amp; bröllopsfest
     <p>
       Vigseln kommer att äga rum i Forsmarks kyrka klockan
         {{ site.data.schedule | where: "key", "vigsel" | map: "time" }}.
-      För boende på Notvallen (delar av släkten) eller på Strandhotellet i Öregrund (övriga) finns det möjlighet att åka till vigseln via inhyrd buss. Denna avgår från Notvallen klockan
-        {{ site.data.schedule | where: "key", "buss.notvallen" | map: "time" }}
-      och från Strandhotellet klockan
+      För boende på Strandhotellet i Öregrund finns det möjlighet att åka till vigseln via inhyrd buss. Denna avgår från Strandhotellet klockan
         {{ site.data.schedule | where: "key", "buss.strandhotellet" | map: "time" }}.
       Meddela huruvida ni vill åka med när ni besvarar inbjudan.
     </p>
@@ -39,7 +37,7 @@ title: Vigsel &amp; bröllopsfest
     <p>
       När kvällen är slut, cirka
         {{ site.data.schedule | where: "key", "buss.festlokalen" | map: "time" }},
-      kommer bussen att ta er tillbaka till Öregrund alternativt Notvallen.
+      kommer bussen att ta er tillbaka till Öregrund.
     </p>
     <p class="maplink">
       <a href="/karta/#festlokalen">Forsmarks Wärdshus</a>

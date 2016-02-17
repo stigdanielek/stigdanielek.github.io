@@ -14,9 +14,23 @@ title: Hem
       16 juli 2016
     </p>
 
-    <p class="home-text">
-      XX dagar kvar
-    </p>
+    <p class="home-text" id="daysLeft"></p>
+
+    <script>
+    var goal = new Date('2016-07-16');
+    var now = new Date();
+    var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var daysLeft = Math.floor((goal - today) / (60 * 60 * 24 * 1000));
+    var endText = daysLeft == 1 ? ' dag kvar' : ' dagar kvar';
+
+    if (daysLeft > 0) {
+      document.getElementById('daysLeft').innerHTML = daysLeft + endText;
+    } else if (daysLeft == 0) {
+      document.getElementById('daysLeft').innerHTML = 'Det är idag!';
+    } else {
+      document.getElementById('daysLeft').innerHTML = 'Sorry, du missade festen!';
+    }
+    </script>
 
     <p class="home-text">
       Välkomna! Vi blir jätteglada om ni vill komma och fira den här dagen med oss. Här har vi samlat den viktigaste informationen om vigseln, festen och resten av helgen.

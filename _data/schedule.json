@@ -1,17 +1,6 @@
 [
 
   {
-    "key": "buss.notvallen",
-    "day": "lördag",
-    "time": "14.45",
-    "mapText": "buss mot kyrkan",
-    "longText": "Bussen avgår från Notvallen",
-    "place": "notvallen",
-    "to": "kyrkan",
-    "via": "strandhotellet"
-  },
-
-  {
     "key": "buss.strandhotellet",
     "day": "lördag",
     "time": "15.15",
@@ -44,10 +33,9 @@
     "day": "lördag",
     "time": "02.00",
     "mapText": "buss tillbaka till",
-    "longText": "Buss tillbaka till Strandhotellet och Notvallen",
+    "longText": "Buss tillbaka till Strandhotellet",
     "place": "festlokalen",
-    "to": "notvallen",
-    "via": "strandhotellet"
+    "to": "strandhotellet"
   },
 
   {
