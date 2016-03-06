@@ -10,7 +10,7 @@ function getScheduleForPlace(key) {
     var ev = schedule[i];
     var info = '';
     if (ev.place == key) {
-      info += ev.time + ' - ' + ev.mapText;
+      info += 'kl. ' + ev.time + ' - ' + ev.mapText;
       if (ev.to) {
         info += ' ' + getLinkToPlace(ev.to);
       }
